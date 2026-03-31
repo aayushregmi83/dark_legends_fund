@@ -1005,7 +1005,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildFooter() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 48),
-      border: Border(top: BorderSide(color: AppColors.gold.withOpacity(0.25))),
+      decoration: BoxDecoration(
+        border: Border(
+          top: BorderSide(color: AppColors.gold.withOpacity(0.25)),
+        ),
+      ),
       child: Text.rich(
         TextSpan(
           style: GoogleFonts.rajdhani(
